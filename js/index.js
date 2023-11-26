@@ -42,7 +42,18 @@ function saludar2(email, contraseña) {
 
 saludar2(email, contraseña);
 
+//////////////////////////////////////////////////////////////////////////
+//array con informacion de usurario
 
+function Usuario(nombre, apellido, fecha_de_ingreso){
+    this.nombre = nombre
+    this.apellido = apellido
+    this.fecha_de_ingreso = fecha_de_ingreso
+}
+
+const USUARIO = new Usuario("Facundo", "Fonsalido", 2023);
+console.log(USUARIO);
+//////////////////////////////////////////////////////////////////////////
 
 
 
@@ -58,6 +69,43 @@ function sumar() {
 
 
 sumar();
+
+
+//////////////////////////////////////////////////////////////////////
+
+//carrito de productos
+const CARRITO =[
+    {
+        producto: "Platillos",
+        precio: 350000
+    },
+    {
+        producto: "Palilloa",
+        precio: 75000
+    },    
+]
+
+
+let precioTotal = 0;
+for(const item of CARRITO){
+    precioTotal += item.precio;
+}
+
+console.log("el precio total del carrito es : $" + precioTotal);
+//////////////////////////////////////////////////////////////////////
+
+//Carrito de productos ordenados por valor
+const CARRITO2 = [
+    {producto: "Platillos", precio:350000},
+    {producto: "Palillos", precio:75000},
+]
+
+let productosOrdenados = CARRITO2.slice().sort((a,b) => a.precio - b.precio);
+
+console.log(productosOrdenados);
+
+//////////////////////////////////////////////////////////////////////////////////
+
 
 //preguntar si esta conforme con los productos
 
