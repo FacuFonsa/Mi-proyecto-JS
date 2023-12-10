@@ -39,7 +39,7 @@ h2{
 }
 
 .producto {
-    border: 1px solid #ccc; /
+    border: 1px solid #ccc; 
     margin: 10px; 
     padding: 10px;
     width: 200px; 
@@ -48,18 +48,18 @@ h2{
     }
 
 .producto h3 {
-    margin-bottom: 5px; /* Espaciado entre el título y el precio */
+    margin-bottom: 5px; 
 }
 
 .producto p {
-    font-weight: bold; /* Texto del precio en negrita */
+    font-weight: bold; 
 }
 
 .producto button {
-    background-color: #4CAF50; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin bordes en el botón */
-    padding: 10px; /* Relleno del botón */
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    padding: 10px; 
     cursor: pointer;
 }
 .cards{
