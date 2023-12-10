@@ -29,7 +29,7 @@
     </header>
 
         <main>
-            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+            <!-- <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content rounded-4 shadow">
                     <div class="modal-header p-5 pb-4 border-bottom-0">
@@ -66,7 +66,18 @@
                     </div>
                     </div>
                 </div>
-                </div>
+                </div> -->
+                <h1>Seccion de compras</h1>
+                <section id="carrito" class="carrito-container">
+                    <h2>Productos seleccionados</h2>
+                    <ul id="lista-productos"></ul>
+                    <p>Total de tu compra:$<span id="total">0</span></p>
+                    <button onclick="limpiarCarrito()">Limpiar Carrito</button>
+                </section>
+
+                <h2>Productos</h2>
+
+                <div id="productos" class="cards"></div>
 
         </main>
 
